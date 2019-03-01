@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="email_client=true,query_hints=true,hasWorkflow=true,live_feed=true" audit="true" extends="task" label="Incident" max_length="40" name="incident" sizeclass="54" text_index="true" type="collection">
+        <element label="When needed" max_length="40" name="x_58872_needit_u_when_needed" type="glide_date_time"/>
+        <element label="Requested for" max_length="32" name="x_58872_needit_u_requested_for" reference="sys_user" type="reference"/>
+        <element label="New True/False" max_length="40" name="x_58872_needit_u_boolean_6" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" max_length="40" name="x_58872_needit_u_request_type" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="x_58872_needit_u_string_7" type="string"/>
+        <element label="New Reference" max_length="32" name="x_58872_needit_u_reference_5" reference="sc_ic_task_assign_defn_staging" type="reference"/>
+    </element>
+</database>
